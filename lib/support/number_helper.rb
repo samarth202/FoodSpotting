@@ -2,7 +2,7 @@
 # included (or "mixed-in") to a class and then reused.
 # Borrows heavily from Ruby on Rails' number_to_currency method.
 module NumberHelper
-  
+  #Function to format our prices with unit , precision , delimiters and seperators.
   def number_to_currency(number, options={})
     unit      = options[:unit]      || '$'
     precision = options[:precision] || 2
